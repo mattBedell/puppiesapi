@@ -10,8 +10,16 @@ router.get('/', getAllPuppies, (req, res) => {
 });
 
 // Implement POST to adopt a puppy
+router.post('/', adoptPuppy, (req, res) => {
+  res.json(res.puppies || []);
+})
 
-// Implement PUT to like a puppy
+router.put('/', likePuppy, (req, res) => {
+  res.status(204).end();
+})
+router.delete('/', abandonPuppy, (req, res) => {
+  res.status(204).end();
+})
 
 // Implement DELETE to abandon a puppy :(
 

@@ -40,3 +40,12 @@ header > img {
 .puppy-picture > img {
   height: 100px;
 }
+.btn {
+  background-color: red;
+  height: 35px;
+  width: 50%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin-left: 25%;
+}
